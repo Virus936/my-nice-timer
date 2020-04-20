@@ -1,0 +1,70 @@
+body{
+    margin:auto;
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    height:100vh;
+}
+#chrono{
+    display: flex; 
+    justify-content: center; 
+}
+#minute{
+    color : red;
+
+}
+
+chrono, input{
+    border: none; 
+    width:30vw; 
+    font-size : 26vw; 
+    background-color: #fff;
+}
+
+.ctrl{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.ctrl-button{
+    user-select:none;
+    margin:auto; 
+}
+
+.button-timer{
+    display: flex;
+    justify-content: center;
+}
+
+.switch{
+    position: relative;
+    display: inline-block;
+    width:60px;
+    height:34px;
+}
+
+
+.switch input{
+    display:none;
+}
+
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: #ccc;
+}
+.slider::before{
+    content:'';
+    position:absolute;
+    height:26px;
+    width:26px;
+    bottom:4px;
+    left:4px;
+    background-color:green;
+    transition: 250ms;
+}
